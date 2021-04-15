@@ -1,0 +1,28 @@
+<!-- This files extends the default documentation theme by adding a custom CSS stylesheet to the
+pages that are under the demo/ folder. The goal is to make them wider for a better visualisation.
+
+See:
+https://www.sphinx-doc.org/en/master/templating.html
+ -->
+
+{% extends "!layout.html" %}
+
+{% block extrahead %}
+    {{ super() }}
+
+    <!-- if the name of the page contains 'demo/', add a custom stylesheet -->
+    {% if 'demo/' in pagename %}
+        <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    {% endif %}
+{% endblock %}
+
+<!--{% block footer %}-->
+    <!--{{ super() }}-->
+
+    <!--<style>-->
+        <!--/* Sidebar header (and top bar for mobile) */-->
+        <!--.wy-side-nav-search, .wy-nav-top {-->
+          <!--background: #b70e6e;-->
+        <!--}-->
+    <!--</style>-->
+<!--{% endblock %}-->

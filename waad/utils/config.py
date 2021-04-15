@@ -1,0 +1,16 @@
+ANOMALIES_SCORES = {
+    "nb_authentications": {"score": 0.05, "indicator_bound": 15},
+    "nb_computers_reached": {"score": 0.1, "indicator_bound": 10},
+    "nb_new_computers_reached": {"score": 0.3, "indicator_bound": 7},
+    "nb_assets_reached": {"score": 0.1, "indicator_bound": 10},
+    "nb_new_assets_reached": {"score": 0.3, "indicator_bound": 7, "legitimate_model_duration": 25},
+    "nb_privileges_granted": {"score": 0.2, "legitimate_model_duration": 40},
+    "corresponding_anomalies_on_all_indicators": {"score": 0.3},
+    "isolated_private_ip": {"score": 0.7},
+    "rare_grouping_events": {"score": 0.9},
+    "frequency_autentication": {"score": 0.6},
+    "isolated_workstation_name_h2": {"score": 0.3},
+    "WIN_default_machine_name": {"score": 0.3},
+    "DESKTOP_machine_name": {"score": 0.1},
+    "rare_use_IPv6": {"score": 0.7},
+}

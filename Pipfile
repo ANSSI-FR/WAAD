@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+Sphinx = "*"
+sphinxcontrib-napoleon = "*"
+sphinx-rtd-theme = "*"
+notebook = "==5.7.4"
+jupyterlab = "*"
+
+[packages]
+numpy = "*"
+matplotlib = "*"
+pandas = "*"
+ipython = "*"
+psycopg2 = "*"
+sklearn = "*"
+wordcloud = "*"
+tqdm = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
+
+[packages.811e2ca]
+path = "./ad-tree"

@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "waad"
+version = "0.1.0"
+description = ""
+authors = ["Sia Partners"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+numpy = "*"
+matplotlib = "*"
+pandas = "*"
+ipython = "*"
+psycopg2 = "*"
+sklearn = "*"
+wordcloud = "*"
+tqdm = "*"
+ad-tree = {path = "ad-tree"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+Sphinx = "*"
+sphinxcontrib-napoleon = "*"
+sphinx-rtd-theme = "*"
+notebook = "==5.7.4"
+jupyterlab = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

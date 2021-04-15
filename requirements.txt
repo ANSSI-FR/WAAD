@@ -1,0 +1,15 @@
+# dev dependencies
+sphinx
+sphinxcontrib-napoleon
+sphinx-rtd-theme
+jupyterlab
+
+# packages
+numpy
+matplotlib
+pandas
+ipython
+psycopg2
+sklearn
+tqdm
+wordcloud

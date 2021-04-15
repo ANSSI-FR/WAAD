@@ -1,0 +1,5 @@
+/* The pages including this CSS file won't have any width restriction. */
+
+.wy-nav-content {
+    max-width: none;
+}
